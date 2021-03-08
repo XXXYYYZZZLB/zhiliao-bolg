@@ -1,10 +1,11 @@
 package routers
 
 import (
-	"zhiliao_blog/controllers"
 	"github.com/astaxie/beego"
+	"zhiliao_blog/controllers/cms"
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+    beego.Router("/cms",&cms.LoginController{})
+    //beego.Router("/")
 }

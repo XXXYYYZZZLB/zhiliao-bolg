@@ -9,22 +9,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="../../static/front/js/jquery.js"></script>
 <script src="../../static/front/js/nav.js"></script>
-
-</style>
 </head>
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="current">首页</a></li>
-      <li><a href="#">python</a></li>
-      <li><a href="#">golang</a></li>
-      <li><a href="#">java</a></li>
-      <li><a href="#">c++</a></li>
-      <li><a href="#">关于博主</a></li>
-    </ul>
-  </nav>
-</header>
+{{template "front/header.html" .}}
 <!--header end-->
 <main>
   <p class="weizhi">您现在的位置是：
@@ -149,7 +136,7 @@
               <div class="comment-respond">
                   <form action="" method="post" class="comment-form" >
                     
-                    <p style="comment-form-comment">
+                    <p class="comment-form-comment">
                       <textarea id="comment" name="comment"
                             rows="8" aria-required="true"></textarea>
                     </p>
@@ -191,9 +178,7 @@
   </aside>
   <!--aside end--> 
 </main>
-<footer>
-  <p> © 2017-2020 版权所有</p>
-</footer>
+{{template "front/footer.html" .}}
 <!--footer end-->
 </body>
 </html>

@@ -10,18 +10,7 @@
 <script src="../../static/front/js/nav.js"></script>
 </head>
 <body>
-<header>
- <nav>
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="#">python</a></li>
-      <li><a href="#">golang</a></li>
-      <li><a href="#">java</a></li>
-      <li><a href="#">c++</a></li>
-      <li><a href="#">关于博主</a></li>
-    </ul>
-  </nav>
-</header>
+{{template "front/header.html" .}}
 <!--header end-->
 <main>
   <article>
@@ -111,9 +100,7 @@
   </aside>
   <!--aside end--> 
 </main>
-<footer>
-  <p> © 2017-2020 版权所有</p>
-</footer>
+{{template "front/footer.html" .}}
 <!--footer end-->
 
 </body>

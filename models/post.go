@@ -14,6 +14,7 @@ type Post struct {
 	Id int `orm:"pl;auto"`
 	Title string `orm:"description(标题)"`
 	Desc string `orm:"description(描述)"`
+	Content string `orm:"size(4000);description(内容)"`
 	Cover string  `orm:"description(封面图);default(static/upload/bq3.png)"`
 	ReadNum int `orm:"description(阅读数);default(0)"`
 	StarNum int `orm:"description(点赞数);default(0)"`

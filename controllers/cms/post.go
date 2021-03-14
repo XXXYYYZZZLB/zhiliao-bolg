@@ -67,3 +67,11 @@ func (p *PostController) Get()  {
 	p.TplName = "cms/post-list.html"
 
 }
+
+func (p *PostController) ToAdd(){
+	p.TplName="cms/post-add.html"
+}
+
+func (p *PostController) DoAdd(){
+	p.TplName="cms/post-add.html"
+}

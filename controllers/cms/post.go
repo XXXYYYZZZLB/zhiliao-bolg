@@ -73,5 +73,23 @@ func (p *PostController) ToAdd(){
 }
 
 func (p *PostController) DoAdd(){
+
 	p.TplName="cms/post-add.html"
+	title := p.GetString("title")
+	desc := p.GetString("desc")
+	content := p.GetString("content")
+	f,h,_ := p.GetFile("cover")
+	if f!=nil{
+		defer f.Close()
+		fmt.Println(h.Filename)
+	}
+
+
+
+	fmt.Println(title)
+	fmt.Println(desc)
+	fmt.Println(content)
+
+	p.Data["json"] = map[string]interface{}{"code":200,"msg":"添加成功"}
+	p.ServeJSONP()
 }
